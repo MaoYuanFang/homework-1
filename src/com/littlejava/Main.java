@@ -1,5 +1,43 @@
 package com.littlejava;
 
+class QuadPolynomial {
+    int a;
+    int b;
+    int c;
+    public int result(int d){
+        int e =a*d^2+b*d+c;
+        return e;
+    }
+}
+
+ class MyArray{
+    int[] a = new int[10];
+    int i =0;
+    public void add(int b){
+        a[i]=b;
+        i++;
+    }
+    public void  sort(){
+        Arrays.sort(a);
+        System.out.println(a[1]);
+    }
+    public int max() {
+        int max = a[0];
+        for (int i = 1; i < a.length; i++) {
+            if (a[i] > max) {
+                max = a[i];
+            }
+        }
+        return max;
+    }
+    public int length(){
+        return a.length;
+    }
+    public int[] output(){
+        return a;
+    }
+}
+
 public class Main {
 
     public static void main(String[] args) {
